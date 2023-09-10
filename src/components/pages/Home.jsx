@@ -1,11 +1,13 @@
 import Navbar from '../layout/Navbar/Navbar'
 import Card from '../layout/Cards/ServiceCard'
+import Input from '../layout/form/input'
 import Slider from '../layout/Slider/Slider'
-
+import Footer from '../layout/Footer/Footer'
 import styles from './Home.module.css'
 
 import justice from '../../img/aboutUs.webp'
 import registro from '../../img/regularizar-imovel.jpeg'
+import logo from '../../img/logo.webp'
 import usucapiao from '../../img/usocapião.webp'
 import contratos from '../../img/contratos.jpg'
 import distratos from '../../img/distrato.jpg'
@@ -17,26 +19,28 @@ export default function Home (){
     return (
         <>
         {/* whatsapp Icon */}
-        <a className={styles.whatsapp} href='/'> <FaSquareWhatsapp/></a>
+        <a className={styles.whatsapp} aria-label="Send message via whatsapp" href='/'> <FaSquareWhatsapp/></a>
         {/* Header e navbar */}
         <header className={styles.header}>
             < Navbar/>
         </header>
+        {/* Main content of the page */}
         <div className='main'>
         {/* Slider carousel */}
             <Slider/>
             {/* About us section */}
-            <div className={styles.about_us}>
+            <div id='aboutUs' className={styles.about_us}>
                 <img className={styles.justice} src={justice} alt="justiça estatua" />
                 <div className={styles.about_us_content}></div>
                 <h2>Sobre a Movai</h2>
                 <p>Ter uma questão jurídica tende a ser uma experiência desagradável. Isso pode ...
                 <a href="/">Leia mais...</a>
                 </p>
-                {/* Services Section */}
             </div>
+                {/* Services Section */}
             <div className={styles.services}>
                 <h2>Serviços Movai Advocacia</h2>
+                {/* cards components */}
                 <Card 
                 link='/regularizacao'
                 title='Registro e regularização de imóveis'
@@ -62,6 +66,7 @@ export default function Home (){
                 img={distratos} 
                 />
             </div>
+            {/* info section */}
             <div className={styles.info}>
                 <img src={lightLogo} alt="Logo movai"/>
                 <h3>O QUE A REGULARIZAÇÃO DE IMÓVEIS SIGNIFICA NA VIDA DE UMA PESSOA</h3>
@@ -74,8 +79,47 @@ export default function Home (){
                 </ul>
                 <h4>QUEM NÃO TEM REGISTRO NA MATRÍCULA DO IMÓVEL NÃO É PROPRIETÁRIO</h4>
             </div>
+            {/* contact section */}
+            <div className={styles.contact}>
+                <h3>Entre em contato</h3>
+                <form action="email sent">
+                    <label>Nome *</label>
+                    <input type='text' name='name' placeholder='Insira seu nome' required/>
+                    <label>Email *</label>
+                    <input type='email' name='email' placeholder='Insira seu email' required/>
+                    <Input 
+                        Label='Telefone'
+                        type='tel' 
+                        name='phone' 
+                        placeholder='Insira seu telefone'
+                    />
+                    <Input 
+                        Label='Endereco'
+                        type='text' 
+                        name='endereco' 
+                        placeholder='Insira seu endereço'
+                    />
+                    <div className='message'>
+                    <Input 
+                        Label='Assunto'
+                        type='text' 
+                        name='subject' 
+                        placeholder='Insira o assunto'
+                     />
+                     <label>Mensagem</label>
+                    <input className={styles.message} type='text' name='name' placeholder='Insira seu nome' required/>
+                    </div>
+                    <input className={styles.btn} type="submit" value="Enviar"/>
+                </form>
+                <p>Belém/PA</p>
+                <p>movai.advocacia@gmail.com</p>
+                <img src={logo} alt="movai advocacia"/>
+            </div>
         </div>
-    
+        {/* Footer */}
+        <div className='footer'>
+            < Footer/>
+        </div>
         </>
 
     )
