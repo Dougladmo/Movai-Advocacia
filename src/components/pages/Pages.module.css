@@ -1,0 +1,195 @@
+.header {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    background-color: var(--secundary-color);
+    font-family: sans-serif;
+}
+
+.header a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+.header img {
+    height: 50px;
+}
+
+.header svg {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+}
+
+.regularizacao {
+    width: 100vw;
+    height: 60vh;
+    background-image: url(../../img/regularizacao-de-imoveis.jpeg);
+    background-size: 750px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.usucapiao {
+    width: 100vw;
+    height: 60vh;
+    background-image: url(../../img/usocapião.webp);
+    background-size: 750px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.contrato {
+    width: 100vw;
+    height: 60vh;
+    background-image: url(../../img/contratos.jpg);
+    background-size: 750px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.distratos {
+    width: 100vw;
+    height: 60vh;
+    background-image: url(../../img/distrato.jpg);
+    background-size: 750px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.content {
+    font-family: sans-serif;
+    margin: 0 auto;
+    background-color: #fff;
+    max-width: 750px;
+    padding: 40px;
+}
+
+.content p {
+    color: #3c4c54;
+    font-size: 13px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-bottom: 2px solid #eeefef;
+    padding-bottom: 32px;
+}
+
+.service p {
+    margin-top: 16px;
+}
+
+.service h1 {
+    font-size: 2rem;
+}
+
+.service h1, 
+.service h3{
+    color: #3c4c54;
+}
+
+.service ul {
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    display: flex;
+    border: 2px solid #e9eaeb;
+    width: 310px;
+    padding: 0;
+    height: 53px;
+}
+
+.service span {
+    border-right: 2px solid #e9eaeb;
+    padding-right: 1rem;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+.service a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    width: 132px;
+    height: 40px;
+    font-size: 14px;
+    margin-top: 16px;
+    background-color: var(--secundary-color);
+}
+
+.service a:hover {
+    transition: .3s;
+    font-size: 14.5px;
+    color: var(--secundary-color);
+    background-color: var(--primary-color);
+}
+
+.description {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-bottom: 2px solid #eeefef;
+    padding-bottom: 32px;
+}
+
+.description h1, 
+.description h3{
+    color: #3c4c54;
+    font-size: 20px;
+}
+
+.description p {
+    padding-top: 16px;
+}
+
+.contact {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-bottom: 2px solid #eeefef;
+    padding-bottom: 32px;
+}
+
+.contact h1, 
+.contact h3{
+    color: #3c4c54;
+    font-size: 20px;
+}
+
+.contact p {
+    padding-top: 16px;
+}
+
+
+@media (max-width:600px) {
+    .service ul {
+        width: 290px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .main img{
+        display: block;
+        margin: 0 auto;
+        width: 100vw;
+        height: 85vh;
+    }
+}
+
+
+

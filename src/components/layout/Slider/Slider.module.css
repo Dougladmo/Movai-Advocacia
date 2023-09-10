@@ -1,0 +1,19 @@
+.slider button {
+    border: 1px solid #000;
+    
+}
+
+@media (max-width:425px) {
+    .slider img {
+        width: 500px;
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .slider img{
+        max-height: 90vh;
+        width: 100vw;
+        height: auto;
+    }
+}

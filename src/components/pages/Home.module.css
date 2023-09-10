@@ -1,0 +1,125 @@
+.header{
+    font-family: sans-serif;
+    background-color: var(--secundary-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.whatsapp {
+    position: fixed;
+    z-index: 100;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    bottom: 0;
+    right: 0;
+    font-size: 60px;
+}
+
+.whatsapp svg {
+    color: #0fc144;
+}
+
+.about_us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    background-color: #d7d5c8;
+    font-family: sans-serif;
+}
+
+.justice {
+    width: 400px;
+    padding-top: 8px;
+    position: absolute;
+    left: 0;
+}
+
+.about_us h2 {
+    position: relative;
+    font-family: serif;
+    color: #3c4c54;
+    text-align: right;
+    font-size: 28px; 
+    padding-top: 3.5rem;
+    padding-right: .5rem;
+}
+
+.about_us h2::after {
+    content: "";
+    border-top: 2px solid #333;
+    width: 40%;
+
+    position: absolute;
+    bottom: -5px;
+    left: 23%;
+  }
+
+.about_us p {
+    color: #000;
+    max-width: 230px;
+    text-align: left;
+    margin-top: 3.5rem;
+}
+
+.about_us a {
+    color: #000;
+    margin-top: 10px;
+    padding-bottom: 29px;
+    display: block;
+}
+
+.services {
+    background-color: var(--primary-color);
+}
+
+.services h2 {
+    font-weight: normal;
+    position: relative;
+    max-width: 200px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2.5rem;
+}
+
+.services h2::after {
+    content: "";
+    border-top: 2px solid #fff;
+    width: 40%;
+
+    position: absolute;
+    bottom: -5px;
+    left: 30%;
+  }
+
+.info {
+    margin-top: -48px;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 500px;
+}
+
+.info h3 {
+    text-align: center;
+    font-size: 18px;
+    max-width: 370px;
+}
+
+.info h4 {
+    text-align: center;
+    font-size: 16px;
+    max-width: 370px;
+}
+
+.info li {
+    font-weight: bold;
+    font-size: 14px;
+}
+  
