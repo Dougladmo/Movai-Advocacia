@@ -1,5 +1,5 @@
 .footer {
-    padding-top: 20px;
+    padding-top: 15px;
     padding-bottom: 5px;
     background-color: var(--primary-color);
     color: #fff;
@@ -43,4 +43,32 @@
     font-size: 13px;
     padding-top: 10px;
     text-align: center;
+}
+
+@media (min-width: 800px) {
+    .footer .contact{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+
+        width: 90vw;
+        padding-top: 10px;
+        margin: 0 auto;
+
+        border-top: 4px solid #fff;
+    }
+
+    .contact p {
+        font-size: 13px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .footer li {
+        width: 20px;
+        height: 20px;
+        font-size: 14px;
+    }
 }

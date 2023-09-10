@@ -25,7 +25,7 @@ export default function Home (){
             < Navbar/>
         </header>
         {/* Main content of the page */}
-        <div className='main'>
+        <div className={styles.main}>
         {/* Slider carousel */}
             <Slider/>
             {/* About us section */}
@@ -44,7 +44,6 @@ export default function Home (){
                 <Card 
                 link='/regularizacao'
                 title='Registro e regularização de imóveis'
-                description='Matricula do imóvel, Registro em Cartórios'
                 img={registro} 
                 />
                 <Card 
@@ -69,6 +68,7 @@ export default function Home (){
             {/* info section */}
             <div className={styles.info}>
                 <img src={lightLogo} alt="Logo movai"/>
+                <div>
                 <h3>O QUE A REGULARIZAÇÃO DE IMÓVEIS SIGNIFICA NA VIDA DE UMA PESSOA</h3>
                 <ul>
                     <li>Propriedade;</li>
@@ -78,6 +78,7 @@ export default function Home (){
                     <li>Possibilidade de transmissão.</li>
                 </ul>
                 <h4>QUEM NÃO TEM REGISTRO NA MATRÍCULA DO IMÓVEL NÃO É PROPRIETÁRIO</h4>
+                </div>
             </div>
             {/* contact section */}
             <div className={styles.contact}>

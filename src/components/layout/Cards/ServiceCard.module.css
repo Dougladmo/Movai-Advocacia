@@ -27,6 +27,11 @@
     border-bottom: 2px solid #fff;
 }
 
+.content a:hover {
+    color: #ffffffb4;
+    transition: .3s;
+}
+
 .content .btn {
     display: flex;
     justify-content: center;
@@ -37,6 +42,34 @@
     height: 50px;
     border: 1px solid #fff;
     padding: 0;
+}
+
+.content .btn:hover {
+    transition: .3s;
+    background-color: #37444abc;
+    color: #ffffffb4;
+}
+
+@media (min-width: 1000px) {
+    .card {
+        display: flex;
+        margin-bottom: 200px;
+        position: relative;
+        border: none;
+    }
+    .card img {
+        position: absolute;
+        left: -200px;
+        width: 450px;
+        height: 450px; 
+    }
+    .card .content {
+        background-color: var(--primary-color);
+        margin-top: 50px;
+        margin-left: 150px;
+        border: 2px solid #fff;
+        z-index: 1;
+    }
 }
 
 

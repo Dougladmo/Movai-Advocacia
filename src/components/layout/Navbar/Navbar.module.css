@@ -1,16 +1,8 @@
 .navbar {
     font-family: sans-serif;
-    background-color: var(--secundary-color);
-    margin: 0 150px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    padding: 20px;
+    background-color: #ba904caa;
+    margin: 0 100px;
     padding-left: 50px;
-}
-
-.navbar img {
-    width: 100px;
-    height: 50px;
 }
 
 .navbar a {
@@ -27,15 +19,13 @@ span .toggler-icon {
 }
 
 .offcanvas {
-    background-color: #ba904caf;
+    background-color: #ba904cd5;
     color: #fff;
-    padding: 20px;
+    padding: 15px;
 }
 
 @media (max-width: 1000px) {
     .navbar {
         margin: 0;
-        border-bottom-right-radius: 0px;
-        border-bottom-left-radius: 0px;
     }
 }

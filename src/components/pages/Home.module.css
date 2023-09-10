@@ -6,6 +6,10 @@
     z-index: 100;
 }
 
+.main {
+    background-color: var(--primary-color);
+}
+
 .whatsapp {
     position: fixed;
     z-index: 100;
@@ -98,7 +102,7 @@
     margin-top: -48px;
     background-color: var(--primary-color);
     color: #fff;
-    padding: 10px;
+    padding: 20px;
     gap: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -119,11 +123,11 @@
 }
 
 .info li {
-    font-weight: bold;
     font-size: 14px;
 }
 
 .contact {
+    background-color: #fff;
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
@@ -182,4 +186,72 @@
     width: 200px;
     margin: 0 auto;
 }
-  
+
+@media (min-width: 800px) {
+    .whatsapp {
+        margin-bottom: 10px;
+        margin-right: 35px;
+        font-size: 80px;
+    }
+
+    .about_us img {
+        display: none;
+    }
+    .about_us {
+        align-items: center;
+        background-image: url(../../img/aboutUs_desktop.webp);
+        background-size: cover;
+        height: 85vh;
+    }
+    .about_us h2 {
+        margin-left: 50%;
+        font-size: 4rem;
+    }
+
+    .about_us p {
+        max-width: 500px;
+        margin-left: 57%;
+        font-weight: 300;
+        font-size: 1.1rem;
+        text-align: left;
+    }
+
+    .services h2 {
+        max-width: 500px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .info img {
+        width: 200px;
+    }
+
+    .info h3, .info h4{
+        max-width: 800px;
+    }
+
+    .contact img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 90vw;
+        height: 550px;
+        margin: 0 auto;
+    }
+
+    .contact form {
+        display: grid;
+        grid-template-columns: 200px 200px;
+    }
+
+}
