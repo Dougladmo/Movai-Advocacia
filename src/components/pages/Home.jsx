@@ -82,12 +82,16 @@ export default function Home (){
             </div>
             {/* contact section */}
             <div className={styles.contact}>
-                <h3>Entre em contato</h3>
+                <h3 className={styles.title}>Entre em contato</h3>
                 <form action="email sent">
+                    <div className={styles.form_top}>
+                    <div>
                     <label>Nome *</label>
                     <input type='text' name='name' placeholder='Insira seu nome' required/>
                     <label>Email *</label>
                     <input type='email' name='email' placeholder='Insira seu email' required/>
+                    </div>
+                    <div>
                     <Input 
                         Label='Telefone'
                         type='tel' 
@@ -100,7 +104,9 @@ export default function Home (){
                         name='endereco' 
                         placeholder='Insira seu endereço'
                     />
-                    <div className='message'>
+                    </div>
+                    </div>
+                    <div className={styles.message}>
                     <Input 
                         Label='Assunto'
                         type='text' 
@@ -112,9 +118,13 @@ export default function Home (){
                     </div>
                     <input className={styles.btn} type="submit" value="Enviar"/>
                 </form>
+                <div className={styles.email_logo}>
+                <h3>Entre em contato</h3>
                 <p>Belém/PA</p>
                 <p>movai.advocacia@gmail.com</p>
+                <p>(91) 3060-8877 |  (91) 9 9993-9074 </p>
                 <img src={logo} alt="movai advocacia"/>
+                </div>
             </div>
         </div>
         {/* Footer */}

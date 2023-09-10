@@ -10,6 +10,8 @@
     background-color: var(--primary-color);
 }
 
+/* WHATSAPP ICON */
+
 .whatsapp {
     position: fixed;
     z-index: 100;
@@ -23,6 +25,8 @@
 .whatsapp svg {
     color: #0fc144;
 }
+
+/* ABOUT US SECTION */
 
 .about_us {
     display: flex;
@@ -74,6 +78,8 @@
     display: block;
 }
 
+/* SERVICES SECTION */
+
 .services {
     background-color: var(--primary-color);
 }
@@ -97,6 +103,8 @@
     bottom: -5px;
     left: 30%;
   }
+
+  /* INFO SECTION */
 
 .info {
     margin-top: -48px;
@@ -126,7 +134,10 @@
     font-size: 14px;
 }
 
+/* CONTACT SECTION */
+
 .contact {
+    color: var(--primary-color);
     background-color: #fff;
     font-family: sans-serif;
     display: flex;
@@ -139,6 +150,10 @@
     font-size: 28px;
     margin-bottom: 30px;
     text-align: center;
+}
+
+.title_desk{
+    display: none;
 }
 
 .contact label {
@@ -170,7 +185,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 150px;
     margin-bottom: 3rem;
     height: 50px;
     background-color: var(--primary-color);
@@ -183,9 +198,12 @@
 }
 
 .contact img {
+    display: block;
     width: 200px;
     margin: 0 auto;
 }
+
+/* MEDIA QUERY */
 
 @media (min-width: 800px) {
     .whatsapp {
@@ -222,6 +240,8 @@
         padding-bottom: 10px;
     }
 
+    /* info section  */
+
     .info {
         display: flex;
         flex-direction: row;
@@ -236,22 +256,68 @@
         max-width: 800px;
     }
 
+    /* Contact section */
+
     .contact img {
-        width: 300px;
-        height: 300px;
+        width: 150px;
+        height: 150px;
     }
 
     .contact {
+        color: var(--primary-color);
         display: flex;
         flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
         width: 90vw;
         height: 550px;
         margin: 0 auto;
     }
 
+    .contact h3{
+        order: 1;
+        align-self: flex-start;
+        justify-self: center;
+    }
+
     .contact form {
-        display: grid;
-        grid-template-columns: 200px 200px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+        padding: 50px;
+    }
+
+    .contact input {
+        height: 50px;
+        outline: 0;
+    }
+
+    .contact .form_top {
+        display: flex;
+        gap: 10px;
+    }
+
+    .contact .btn {
+        margin-top: 150px;
+        height: 40px;
+    }
+
+    .contact .title {
+        display: none;
+    }
+
+    .email_logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .email_logo h3{
+        display: block;
+        font-weight: bold;
+        margin: auto;
+        order: -1;
     }
 
 }
