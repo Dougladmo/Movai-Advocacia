@@ -39,17 +39,20 @@ export default function Home (){
                 <h2>Serviços Movai Advocacia</h2>
                 <Card 
                 link='/regularizacao'
-                title='Registro e regularização de imóveis' description='Matricula do imóvel, Registro em Cartórios'
+                title='Registro e regularização de imóveis'
+                description='Matricula do imóvel, Registro em Cartórios'
                 img={registro} 
                 />
                 <Card 
                 link='/usucapiao'
-                title='Usucapião judicial e extrajudicial' description='Propriedade do imóvel oficial.'
+                title='Usucapião judicial e extrajudicial'
+                description='Propriedade do imóvel oficial.'
                 img={usucapiao} 
                 />
                 <Card 
                 link='/contratos'
-                title='Elaboração de contratos de vendas' description='Elaboração de contratos de vendas'
+                title='Elaboração de contratos de vendas'
+                description='Elaboração de contratos de vendas'
                 img={contratos} 
                 />
                 <Card 

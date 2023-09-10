@@ -1,7 +1,7 @@
 .card {
     font-family: sans-serif;
     margin-top: 3rem;
-    width: 330px;
+    width: 350px;
     margin: 3rem auto;
     border: 2px solid #fff;
     color: #fff;
@@ -9,7 +9,7 @@
 
 .card img {
     width: 100%;
-    height: 330px;
+    height: 350px;
 }
 
 .content {
@@ -32,7 +32,7 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    width: 270px;
+    width: 300px;
     border-radius: 30px;
     height: 50px;
     border: 1px solid #fff;
