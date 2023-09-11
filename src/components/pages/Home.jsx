@@ -34,9 +34,9 @@ export default function Home (){
             <Slider/>
             {/* About us section */}
             <div id='aboutUs' className={styles.about_us}>
-                <Fade>
+                <Slide>
                 <img className={styles.justice} src={justice} alt="justiça estatua" />
-                </Fade>
+                </Slide>
                 <div className={styles.about_us_content}></div>
                 <h2>Sobre a Movai</h2>
                 <p>Ter uma questão jurídica tende a ser uma experiência desagradável. Isso pode ...
@@ -47,7 +47,7 @@ export default function Home (){
             <div id='services' className={styles.services}>
                 <h2>Serviços Movai Advocacia</h2>
                 {/* cards components */}
-                <Fade damping={0.5} triggerOnce>
+                <Fade triggerOnce>
                 <Card 
                 link='/regularizacao'
                 title='Registro e regularização de imóveis'
