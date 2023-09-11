@@ -83,7 +83,7 @@
     padding: 40px;
     border-left: 3px solid var(--secundary-color);
     border-right: 3px solid var(--secundary-color);
-    box-shadow: 1px 1px 15px 1px rgba(35, 33, 33, 0.675);
+    box-shadow: 1px 11px 15px rgba(35, 33, 33, 0.675);
 }
 
 .content p {
