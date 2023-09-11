@@ -47,7 +47,7 @@
 }
 
 .content .btn:hover {
-    transition: .3s;
+    transition: .5s;
     background-color: var(--terciary-color);
     font-size: 17px;
     text-shadow: 3px 3px 3px #00000057;
