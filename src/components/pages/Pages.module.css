@@ -40,7 +40,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    
     box-shadow: 1px 1px 15px 1px rgba(35, 33, 33, 0.675);
 }
 
@@ -51,7 +51,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    
     box-shadow: 1px 1px 15px 1px rgba(35, 33, 33, 0.675);
 }
 
@@ -62,7 +62,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
     box-shadow: 1px 1px 15px 1px rgba(35, 33, 33, 0.675);
 }
 
@@ -73,7 +72,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
     box-shadow: 1px 1px 15px 1px rgba(35, 33, 33, 0.675);
 }
 
@@ -83,8 +81,8 @@
     background-color: #fff;
     max-width: 750px;
     padding: 40px;
-    border-left: 2px solid var(--secundary-color);
-    border-right: 2px solid var(--secundary-color);
+    border-left: 3px solid var(--secundary-color);
+    border-right: 3px solid var(--secundary-color);
     box-shadow: 1px 1px 15px 1px rgba(35, 33, 33, 0.675);
 }
 
