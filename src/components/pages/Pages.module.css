@@ -19,6 +19,7 @@
 
 .header img {
     width: 200px;
+    height: auto;
 }
 
 .header svg {

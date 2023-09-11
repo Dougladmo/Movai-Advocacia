@@ -7,6 +7,7 @@
 
 .navbar img {
     width: 200px;
+    height: auto;
 }
 
 .navbar a {
@@ -38,6 +39,7 @@ span .toggler-icon {
 
 .offcanvas img{
     width: 200px;
+    height: auto;
 }
 
 .offcanvas a{
