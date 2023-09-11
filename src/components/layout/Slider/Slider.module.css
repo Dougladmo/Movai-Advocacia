@@ -9,10 +9,10 @@
     margin-bottom: 30px;
 }
 
-@media (max-width:425px) {
+@media (max-width:600px) {
     .slider img {
         width: 500px;
-        height: 40vh;
+        height: 30vh;
     }
 }
 
