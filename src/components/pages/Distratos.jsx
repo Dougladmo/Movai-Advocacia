@@ -1,5 +1,5 @@
 import { HiArrowLeft } from "react-icons/hi2";
-import logo from '../../img/logo.png'
+import logo from '../../img/logo_clara.png'
 import styles from './Pages.module.css'
 
 export default function Distratos (){
