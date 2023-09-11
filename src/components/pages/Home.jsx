@@ -1,6 +1,6 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
-import Flip from 'react-reveal/Flip';
+import { Fade } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 
 import Navbar from '../layout/Navbar/Navbar'
 import Card from '../layout/Cards/ServiceCard'
@@ -34,20 +34,20 @@ export default function Home (){
             <Slider/>
             {/* About us section */}
             <div id='aboutUs' className={styles.about_us}>
-                <Fade left>
+                <Fade>
                 <img className={styles.justice} src={justice} alt="justiça estatua" />
+                </Fade>
                 <div className={styles.about_us_content}></div>
                 <h2>Sobre a Movai</h2>
                 <p>Ter uma questão jurídica tende a ser uma experiência desagradável. Isso pode ...
                 <a href="/">Leia mais...</a>
                 </p>
-                </Fade>
             </div>
                 {/* Services Section */}
             <div id='services' className={styles.services}>
                 <h2>Serviços Movai Advocacia</h2>
                 {/* cards components */}
-                <Fade>
+                <Fade damping={0.5} triggerOnce>
                 <Card 
                 link='/regularizacao'
                 title='Registro e regularização de imóveis'
@@ -75,9 +75,9 @@ export default function Home (){
             </div>
             {/* info section */}
             <div className={styles.info}>
-                <Flip left>
+                <Slide triggerOnce>
                 <img src={lightLogo} alt="Logo movai"/>
-                </Flip>
+                </Slide>
                 <div>
                 <h3>O QUE A REGULARIZAÇÃO DE IMÓVEIS SIGNIFICA NA VIDA DE UMA PESSOA</h3>
                 <ul>
