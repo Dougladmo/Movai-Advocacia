@@ -1,5 +1,5 @@
 .header{
-    font-family: sans-serif;
+    font-family: 'Barlow', sans-serif;
     background-color: var(--primary-color);
     position: sticky;
     top: 0;
@@ -8,6 +8,7 @@
 
 .main {
     background-color: var(--primary-color);
+    font-family: 'Barlow', sans-serif;
 }
 
 /* WHATSAPP ICON */
@@ -34,7 +35,7 @@
     align-items: flex-end;
     position: relative;
     background-color: #DDD7CB;
-    font-family: sans-serif;
+    font-family: 'Barlow', sans-serif;
 }
 
 .justice {
@@ -125,7 +126,8 @@
 
 .info h4 {
     text-align: center;
-    font-size: 16px;
+    padding-left: 10px;
+    font-size: 18px;
     max-width: 370px;
     padding-bottom: 30px;
 }
@@ -139,7 +141,7 @@
 .contact {
     color: var(--primary-color);
     background-color: #fff;
-    font-family: sans-serif;
+    font-family: 'Barlow', sans-serif;
     display: flex;
     flex-direction: column;
     padding: 15px;

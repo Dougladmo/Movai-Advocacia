@@ -4,7 +4,7 @@
     top: 0;
     padding: 10px 0;
     background-color: #ba904cf2;
-    font-family: sans-serif;
+    font-family: 'Barlow', sans-serif;
 }
 
 .header a {
@@ -68,7 +68,7 @@
 }
 
 .content {
-    font-family: sans-serif;
+    font-family: 'Barlow', sans-serif;
     margin: 0 auto;
     background-color: #fff;
     max-width: 750px;
