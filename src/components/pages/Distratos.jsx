@@ -6,7 +6,7 @@ export default function Distratos (){
     return (
         <>
         <header className={styles.header} >
-            <nav className="d-flex justify-content-between px-5 align-items-center">
+            <nav className="d-flex justify-content-between align-items-center">
             <a href="/"><HiArrowLeft/></a>
             <a href="/"><img src={logo} alt="Maoai advocacia" /></a>
             </nav>

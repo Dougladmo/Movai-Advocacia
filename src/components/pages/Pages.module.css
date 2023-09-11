@@ -2,7 +2,7 @@
     position: fixed;
     width: 100vw;
     top: 0;
-    padding: 10px 0;
+    padding: 10px 100px;
     background-color: var(--primary-color);
     font-family: 'Barlow', sans-serif;
 }
@@ -20,6 +20,7 @@
 .header img {
     width: 200px;
     height: auto;
+    padding-right: 0;
 }
 
 .header svg {
@@ -183,6 +184,12 @@
 
 
 @media (max-width:600px) {
+    .header {
+        margin: 0;
+        padding: 5px 0;
+        padding-left: 25px;
+    }
+
     .service ul {
         width: 290px;
     }
