@@ -81,15 +81,9 @@
     background-color: #fff;
     max-width: 750px;
     padding: 40px;
-<<<<<<< HEAD
     border-left: 2px solid var(--secundary-color);
     border-right: 2px solid var(--secundary-color);
-    box-shadow: 1px 11px 15px rgba(35, 33, 33, 0.675);
-=======
-    border-left: 2px solid var(--secundary-color);
-    border-right: 2px solid var(--secundary-color);
-    box-shadow: 1px 1px 15px 1px rgba(35, 33, 33, 0.675);
->>>>>>> 722093ab54dbf2db9c7fc3fbbb53653375a17964
+    box-shadow: 1px 11px 15px 1px rgba(35, 33, 33, 0.675);
 }
 
 .content p {
