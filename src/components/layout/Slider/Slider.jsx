@@ -14,7 +14,7 @@ function UncontrolledExample() {
     <div className={styles.slider}>
     <Carousel>
       <Carousel.Item>
-        <Fade triggerOnce>
+        <Fade direction='up' triggerOnce>
         <img src={imagem_1} alt="Belém do Pará" />
         </Fade>
         <Carousel.Caption>
