@@ -1,3 +1,7 @@
+import React from 'react';
+import Fade from 'react-reveal/Fade';
+import Flip from 'react-reveal/Flip';
+
 import Navbar from '../layout/Navbar/Navbar'
 import Card from '../layout/Cards/ServiceCard'
 import Input from '../layout/form/input'
@@ -5,9 +9,9 @@ import Slider from '../layout/Slider/Slider'
 import Footer from '../layout/Footer/Footer'
 import styles from './Home.module.css'
 
+import logo from '../../img/logo.png'
 import justice from '../../img/aboutUs.webp'
 import registro from '../../img/regularizar-imovel.jpeg'
-import logo from '../../img/logo.webp'
 import usucapiao from '../../img/usocapião.webp'
 import contratos from '../../img/contratos.jpg'
 import distratos from '../../img/distrato.jpg'
@@ -30,17 +34,20 @@ export default function Home (){
             <Slider/>
             {/* About us section */}
             <div id='aboutUs' className={styles.about_us}>
+                <Fade left>
                 <img className={styles.justice} src={justice} alt="justiça estatua" />
                 <div className={styles.about_us_content}></div>
                 <h2>Sobre a Movai</h2>
                 <p>Ter uma questão jurídica tende a ser uma experiência desagradável. Isso pode ...
                 <a href="/">Leia mais...</a>
                 </p>
+                </Fade>
             </div>
                 {/* Services Section */}
-            <div className={styles.services}>
+            <div id='services' className={styles.services}>
                 <h2>Serviços Movai Advocacia</h2>
                 {/* cards components */}
+                <Fade>
                 <Card 
                 link='/regularizacao'
                 title='Registro e regularização de imóveis'
@@ -64,10 +71,13 @@ export default function Home (){
                 description='Rescisão de contratos'
                 img={distratos} 
                 />
+                </Fade >
             </div>
             {/* info section */}
             <div className={styles.info}>
+                <Flip left>
                 <img src={lightLogo} alt="Logo movai"/>
+                </Flip>
                 <div>
                 <h3>O QUE A REGULARIZAÇÃO DE IMÓVEIS SIGNIFICA NA VIDA DE UMA PESSOA</h3>
                 <ul>
@@ -106,7 +116,7 @@ export default function Home (){
                     />
                     </div>
                     </div>
-                    <div className={styles.message}>
+                    <div className={styles.subject}>
                     <Input 
                         Label='Assunto'
                         type='text' 
@@ -115,8 +125,8 @@ export default function Home (){
                      />
                      <label>Mensagem</label>
                     <input className={styles.message} type='text' name='name' placeholder='Insira seu nome' required/>
+                    <input className={styles.btn} type="submit" value='Enviar' />
                     </div>
-                    <input className={styles.btn} type="submit" value="Enviar"/>
                 </form>
                 <div className={styles.email_logo}>
                 <h3>Entre em contato</h3>

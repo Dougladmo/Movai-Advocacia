@@ -1,6 +1,6 @@
 .header{
     font-family: sans-serif;
-    background-color: var(--secundary-color);
+    background-color: var(--primary-color);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -33,7 +33,7 @@
     flex-direction: column;
     align-items: flex-end;
     position: relative;
-    background-color: #d7d5c8;
+    background-color: #DDD7CB;
     font-family: sans-serif;
 }
 
@@ -47,7 +47,7 @@
 .about_us h2 {
     position: relative;
     font-family: serif;
-    color: #3c4c54;
+    color: var(--primary-color);
     text-align: right;
     font-size: 28px; 
     padding-top: 3.5rem;
@@ -185,11 +185,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 20px;
     margin-bottom: 3rem;
     height: 50px;
     background-color: var(--primary-color);
     color: #fff;
+}
+
+.contact .btn:hover {
+    transition: .5s;
+    background-color: var(--terciary-color);
+    font-size: 17.5px;
+    text-shadow: 3px 3px 3px #00000057;
+    text-decoration: none;
+    color: var(--secundary-color);
 }
 
 .contact p {
@@ -259,8 +268,8 @@
     /* Contact section */
 
     .contact img {
-        width: 150px;
-        height: 150px;
+        margin-top: 10px;
+        width: 200px;
     }
 
     .contact {
@@ -268,10 +277,11 @@
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
         width: 90vw;
-        height: 550px;
+        height: 607px;
         margin: 0 auto;
+        padding-bottom: 20px;
     }
 
     .contact h3{
@@ -281,15 +291,25 @@
     }
 
     .contact form {
+        height: 400px;
         display: flex;
         flex-direction: column;
-        margin-left: 100px;
-        padding: 50px;
+        padding-right: 60px;
+        margin-bottom: 100px;
     }
 
     .contact input {
+        width: 225px;
         height: 50px;
         outline: 0;
+    }
+
+    .subject input {
+        width: 100%;
+    }
+
+    .contact .message {
+        height: 116px;
     }
 
     .contact .form_top {
@@ -298,8 +318,9 @@
     }
 
     .contact .btn {
-        margin-top: 150px;
-        height: 40px;
+        background-color: var(--primary-color);
+        margin-bottom: 20px;
+        height: 50px;
     }
 
     .contact .title {
@@ -311,11 +332,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-left: 150px;
+    }
+
+    .email_logo p {
+        font-size: 15px;
     }
 
     .email_logo h3{
+        font-size: 40px;
         display: block;
-        font-weight: bold;
         margin: auto;
         order: -1;
     }

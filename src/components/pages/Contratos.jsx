@@ -1,12 +1,12 @@
 import { HiArrowLeft } from "react-icons/hi2";
-import logo from '../../img/logo.webp'
+import logo from '../../img/logo.png'
 import styles from './Pages.module.css'
 
 export default function Contratos (){
     return (
         <>
         <header className={styles.header} >
-            <nav className="d-flex justify-content-between p-4">
+        <nav className="d-flex justify-content-between px-5 align-items-center">
             <a href="/"><HiArrowLeft/></a>
             <a href="/"><img src={logo} alt="Maoai advocacia" /></a>
             </nav>

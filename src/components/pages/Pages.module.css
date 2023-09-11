@@ -2,7 +2,8 @@
     position: fixed;
     width: 100vw;
     top: 0;
-    background-color: var(--secundary-color);
+    padding: 10px 0;
+    background-color: #ba904cf2;
     font-family: sans-serif;
 }
 
@@ -12,8 +13,12 @@
     color: #fff;
 }
 
+.header a:hover {
+    color: var(--primary-color);
+}
+
 .header img {
-    height: 50px;
+    width: 200px;
 }
 
 .header svg {
@@ -24,41 +29,41 @@
 
 .regularizacao {
     width: 100vw;
-    height: 60vh;
+    height: 80vh;
     background-image: url(../../img/regularizacao-de-imoveis.jpeg);
-    background-size: 750px;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-attachment: fixed;
 }
 
 .usucapiao {
     width: 100vw;
-    height: 60vh;
+    height: 80vh;
     background-image: url(../../img/usocapião.webp);
-    background-size: 750px;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-attachment: fixed;
 }
 
 .contrato {
     width: 100vw;
-    height: 60vh;
+    height: 80vh;
     background-image: url(../../img/contratos.jpg);
-    background-size: 750px;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-attachment: fixed;
 }
 
 .distratos {
     width: 100vw;
-    height: 60vh;
+    height: 80vh;
     background-image: url(../../img/distrato.jpg);
-    background-size: 750px;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-attachment: fixed;
 }
 
@@ -181,15 +186,4 @@
         width: 290px;
     }
 }
-
-@media screen and (min-width: 1000px) {
-    .main img{
-        display: block;
-        margin: 0 auto;
-        width: 100vw;
-        height: 85vh;
-    }
-}
-
-
 
