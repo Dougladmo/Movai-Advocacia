@@ -31,7 +31,7 @@
 .regularizacao {
     width: 100vw;
     height: 80vh;
-    background-image: url(../../img/regularizacao-de-imoveis.jpeg);
+    background-image: url(../../img/regularizacao-de-imoveis.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -51,7 +51,7 @@
 .contrato {
     width: 100vw;
     height: 80vh;
-    background-image: url(../../img/contratos.jpg);
+    background-image: url(../../img/contratos.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -61,7 +61,7 @@
 .distratos {
     width: 100vw;
     height: 80vh;
-    background-image: url(../../img/distrato.jpg);
+    background-image: url(../../img/distrato.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

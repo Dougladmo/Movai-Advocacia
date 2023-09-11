@@ -11,10 +11,10 @@ import styles from './Home.module.css'
 
 import logo from '../../img/logo.png'
 import justice from '../../img/aboutUs.webp'
-import registro from '../../img/regularizar-imovel.jpeg'
+import registro from '../../img/regularizar-imovel.webp'
 import usucapiao from '../../img/usocapião.webp'
-import contratos from '../../img/contratos.jpg'
-import distratos from '../../img/distrato.jpg'
+import contratos from '../../img/contratos.webp'
+import distratos from '../../img/distrato.webp'
 import lightLogo from '../../img/SÍMBOLO CLARO.webp'
 
 import { FaSquareWhatsapp } from "react-icons/fa6";

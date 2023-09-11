@@ -4,8 +4,8 @@ import { Fade, Slide } from "react-awesome-reveal";
 
 import styles from './Slider.module.css'
 
-import imagem_1 from '../../../img/imagem_1.jpg'
-import imagem_2 from '../../../img/imagem_2.jpeg'
+import imagem_1 from '../../../img/imagem_1.webp'
+import imagem_2 from '../../../img/imagem_2.webp'
 import imagem_3 from '../../../img/imagem_3.webp'
 import logo_clara from '../../../img/logo_clara.png'
 
