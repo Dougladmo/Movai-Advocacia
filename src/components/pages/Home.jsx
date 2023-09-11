@@ -34,7 +34,7 @@ export default function Home (){
             <Slider/>
             {/* About us section */}
             <div id='aboutUs' className={styles.about_us}>
-                <Fade delay={200}>
+                <Fade triggerOnce>
                 <img className={styles.justice} src={justice} alt="justiça estatua" />
                 </Fade>
                 <div className={styles.about_us_content}></div>
@@ -47,7 +47,7 @@ export default function Home (){
             <div id='services' className={styles.services}>
                 <h2>Serviços Movai Advocacia</h2>
                 {/* cards components */}
-                <Fade delay={150} triggerOnce>
+                <Fade direction='up' triggerOnce>
                 <Card 
                 link='/regularizacao'
                 title='Registro e regularização de imóveis'

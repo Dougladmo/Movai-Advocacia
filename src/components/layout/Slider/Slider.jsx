@@ -1,6 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 
-import { Slide } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 
 import styles from './Slider.module.css'
 
@@ -14,7 +14,9 @@ function UncontrolledExample() {
     <div className={styles.slider}>
     <Carousel>
       <Carousel.Item>
+        <Fade triggerOnce>
         <img src={imagem_1} alt="Belém do Pará" />
+        </Fade>
         <Carousel.Caption>
           <Slide triggerOnce>
           <img  className={styles.logo} src={logo_clara} alt='movai advocacia' />

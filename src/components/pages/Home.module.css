@@ -79,6 +79,10 @@
     display: block;
 }
 
+.about_us a:hover {
+    color: var(--secundary-color);
+    transition: .4s;
+}
 /* SERVICES SECTION */
 
 .services {
