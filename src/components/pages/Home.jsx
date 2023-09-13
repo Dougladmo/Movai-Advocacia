@@ -8,10 +8,11 @@ import Card from '../layout/Cards/ServiceCard'
 import Input from '../layout/form/input'
 import Slider from '../layout/Slider/Slider'
 import Footer from '../layout/Footer/Footer'
+import About from '../layout/About/About'
+
 import styles from './Home.module.css'
 
 import logo from '../../img/logo.png'
-import justice from '../../img/aboutUs.webp'
 import registro from '../../img/regularizar-imovel.webp'
 import usucapiao from '../../img/usocapião.webp'
 import contratos from '../../img/contratos.webp'
@@ -30,19 +31,12 @@ export default function Home (){
             < Navbar/>
         </header>
         {/* Main content of the page */}
-        <div className={styles.main}>
+        <div  id='home' className={styles.main}>
         {/* Slider carousel */}
             <Slider/>
             {/* About us section */}
-            <div id='aboutUs' className={styles.about_us}>
-                <Fade triggerOnce>
-                <img className={styles.justice} src={justice} alt="justiça estatua" />
-                </Fade>
-                <div className={styles.about_us_content}></div>
-                <h2>Sobre a Movai</h2>
-                <p>Ter uma questão jurídica tende a ser uma experiência desagradável. Isso pode ...
-                <a href="/">Leia mais...</a>
-                </p>
+            <div id='aboutUs'>
+            <About  />
             </div>
                 {/* Services Section */}
             <div id='services' className={styles.services}>
@@ -92,7 +86,7 @@ export default function Home (){
                 </div>
             </div>
             {/* contact section */}
-            <div className={styles.contact}>
+            <div id='contact' className={styles.contact}>
                 <h3 className={styles.title}>Entre em contato</h3>
                 <form action="email sent">
                     <div className={styles.form_top}>

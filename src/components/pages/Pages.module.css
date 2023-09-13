@@ -2,7 +2,7 @@
     position: fixed;
     width: 100vw;
     top: 0;
-    padding: 10px 100px;
+    padding: 10px 0;
     background-color: var(--primary-color);
     font-family: 'Barlow', sans-serif;
 }
@@ -19,14 +19,25 @@
 
 .header img {
     width: 200px;
+    margin-right: 100px;
     height: auto;
     padding-right: 0;
 }
 
 .header svg {
+    margin-left: 100px;
     color: #fff;
     width: 30px;
     height: 30px;
+}
+
+
+.header svg:hover {
+    margin-left: 50px;
+    transition: .5s;
+    width: 100%;
+    height: 35px;
+    color: var(--secundary-color);
 }
 
 .main {

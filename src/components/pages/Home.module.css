@@ -28,62 +28,6 @@
     color: #0fc144;
 }
 
-/* ABOUT US SECTION */
-
-.about_us {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: relative;
-    background-color: #DDD7CB;
-    font-family: 'Barlow', sans-serif;
-}
-
-.justice {
-    width: 400px;
-    padding-top: 8px;
-    position: absolute;
-    left: 0;
-}
-
-.about_us h2 {
-    position: relative;
-    font-family: serif;
-    color: var(--primary-color);
-    text-align: right;
-    font-size: 28px; 
-    padding-top: 3.5rem;
-    padding-right: 1rem;
-}
-
-.about_us h2::after {
-    content: "";
-    border-top: 2px solid var(--primary-color);
-    width: 40%;
-
-    position: absolute;
-    bottom: -5px;
-    left: 23%;
-  }
-
-.about_us p {
-    color: #000;
-    max-width: 230px;
-    text-align: left;
-    margin-top: 3.5rem;
-}
-
-.about_us a {
-    color: #000;
-    margin-top: 10px;
-    padding-bottom: 29px;
-    display: block;
-}
-
-.about_us a:hover {
-    color: var(--secundary-color);
-    transition: .4s;
-}
 /* SERVICES SECTION */
 
 .services {
@@ -226,28 +170,6 @@
         margin-bottom: 10px;
         margin-right: 35px;
         font-size: 80px;
-    }
-
-    .about_us img {
-        display: none;
-    }
-    .about_us {
-        align-items: center;
-        background-image: url(../../img/aboutUs_desktop.webp);
-        background-size: cover;
-        height: 85vh;
-    }
-    .about_us h2 {
-        margin-left: 50%;
-        font-size: 4rem;
-    }
-
-    .about_us p {
-        max-width: 500px;
-        margin-left: 57%;
-        font-weight: 300;
-        font-size: 1.1rem;
-        text-align: left;
     }
 
     .services h2 {
