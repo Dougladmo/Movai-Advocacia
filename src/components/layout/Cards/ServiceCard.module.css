@@ -53,6 +53,7 @@
     text-shadow: 3px 3px 3px #00000057;
     text-decoration: none;
     color: var(--secundary-color);
+    border-color: var(--secundary-color);
 }
 
 @media (min-width: 1000px) {
